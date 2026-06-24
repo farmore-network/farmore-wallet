@@ -1,0 +1,14 @@
+# JS / TS
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Secrets — never commit
+.env
+*.env
+!.env.example
+*.key
+*.pem
+
+# OS
+.DS_Store

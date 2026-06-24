@@ -1,0 +1,20 @@
+{
+  "name": "@farmore-network/wallet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Farmore reference wallet — one name, one balance, one account; self-custodial, send by handle. Frozen interface contract (React app implemented in Milestone 2).",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@farmore-network/sdk": "file:../farmore-sdk"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "repository": "github:farmore-network/farmore-wallet",
+  "homepage": "https://farmore.network"
+}

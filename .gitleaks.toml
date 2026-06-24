@@ -1,0 +1,16 @@
+title = "Farmore gitleaks policy (sdk)"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Build artifacts and vendored dependencies (gitignored, never committed)"
+paths = [
+  "(^|/)target/",
+  "(^|/)out/",
+  "(^|/)cache/",
+  "(^|/)broadcast/",
+  "(^|/)dependencies/",
+  "(^|/)node_modules/",
+  "(^|/)dist/",
+]
