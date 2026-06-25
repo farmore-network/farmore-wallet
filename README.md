@@ -4,6 +4,12 @@ The self-custodial **Farmore wallet**: one name, one balance, one account. Send 
 `@handle`, see a unified cross-chain balance, authenticate with a passkey + threshold
 signing — no seed phrase.
 
+> **Status: mainnet and the app are not live yet** (Milestone 2). No node, no bond, and no
+> financial risk for users.
+
+**Guide:** [Wallet User Guide](docs/USER-GUIDE.md) — for anyone; send by name, no
+technical skill required.
+
 > **Status: frozen interface contract.** [`src/contract.ts`](src/contract.ts) defines the
 > wallet's core model (`WalletAccount`, `UnifiedBalance`, `SendFlowStep`, `AuthProvider`,
 > `WalletController`) against the `@farmore-network/sdk`. The React application is
