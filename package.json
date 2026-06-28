@@ -2,18 +2,31 @@
   "name": "@farmore-network/wallet",
   "version": "0.1.0",
   "private": true,
-  "description": "Farmore reference wallet — one name, one balance, one account; self-custodial, send by handle. Frozen interface contract (React app implemented in Milestone 2).",
+  "description": "Farmore reference wallet — claim a handle, sign in, send by handle, receive. Testnet (Base Sepolia) web app; signs with an external wallet (no custom key custody).",
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json --noEmit && vite build",
+    "preview": "vite preview --port 4173",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@farmore-network/sdk": "file:../farmore-sdk"
+    "@farmore-network/contracts": "file:../farmore-contracts",
+    "@tanstack/react-query": "^5.59.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.21.0",
+    "wagmi": "^2.12.0"
   },
   "devDependencies": {
-    "typescript": "^5.6.0"
+    "@farmore-network/sdk": "file:../farmore-sdk",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0"
   },
   "repository": "github:farmore-network/farmore-wallet",
   "homepage": "https://farmore.network"
